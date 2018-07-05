@@ -37,7 +37,7 @@ webpack搭建vue环境练习
 1.2. 后者是齐全的vue <br>
 1.3. 前者webpack查找node_modules目录下vue的package.json里的main属性找到入口文件是阉割版vue.runtime.common.js <br>
 1.4. 修改方式根目录配置文件webpack配置文件里与module、plugins同级，添加 <br>
-```
+``` javascript
 resolve:{
 	alias:{
       //设置vue导入时候的包的路径
@@ -47,7 +47,7 @@ resolve:{
 ```
 1.5. 前者不能创建注册组件，必须分成单独组件.vue的形式
 1.6. webpack默认不能打包.vue文件、需要安装
-```
+``` shell
 cnpm i vue-loader vue-template-cpmpiler -D
 ```
 1.7. webpack配置文件处
