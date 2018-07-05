@@ -50,4 +50,11 @@ resolve:{
 ```
 cnpm i vue-loader vue-template-cpmpiler -D
 ```
+1.7. webpack配置文件处
+``` javascript
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
+plugins:[
+	new VueLoaderPlugin()
+	]
+```
 
